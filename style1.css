@@ -1,0 +1,184 @@
+body{
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+.box{
+    width: 98.5vw;
+    height: 790px;
+    border: 10px solid;
+    border-left-color: orange ;
+    border-right-color:green ;
+    border-top-color:white;
+    border-bottom-color: white; 
+   position: absolute;
+   left: 1px;
+   top: -1px;
+   
+}
+
+.sky{
+    width: 1800px;
+    height: 700px;
+    right: 800px;
+    
+}
+.road1{
+    position: absolute;
+    top: 520px;
+    left: -5000px;
+    
+    animation: road1 10s infinite linear reverse;
+}
+
+.road2{
+   
+    position: absolute;
+    top: 520px;
+    left: 18px;
+    animation: road2 10s infinite linear reverse;
+}
+
+
+.city1{
+  
+    position: absolute;
+    top: 260px;
+    left: -100%;
+    width: 100%;
+    animation: city1 10s infinite linear reverse;
+}
+.city2{
+    
+    position: absolute;
+    top: 260px;
+    left: 0px;
+    width: 100%;
+    animation: city2 10s infinite linear reverse;
+}
+.car{
+    width: 500px;
+    position: absolute;
+    top: 420px;
+    left: 505px;
+}
+
+.wheel1{
+    width: 90px;
+    position: absolute;
+    top: 530px;
+    left: 548px; 
+    animation: wheel 3s infinite linear;
+    
+}
+.wheel2{
+    width: 90px;
+    position: absolute;
+    top: 530px;
+    left: 855px;
+    animation: wheel 3s infinite linear; 
+}
+.sun{
+    width: 100px;
+    position: absolute;
+    top: 220px;
+    right: 100px;
+    animation: sun 200s infinite linear;
+}
+.flag1{
+    width: 100px;
+    position: absolute;
+    top: 410px;
+    right: 370px;
+
+}
+@keyframes road1
+{
+    from
+    {
+        left: -5000px;
+    }
+    to
+    {
+        left: 18px;
+    }
+}
+@keyframes road2
+{
+    from
+    {
+        left: 18px;
+    }
+    to
+    {
+        left: 5000px;
+    }
+}
+@keyframes city1
+{
+    from
+    {
+        left: -100%;
+    }
+    to
+    {
+        left: 0px;
+    }
+}
+@keyframes city2
+{
+    from
+    {
+        left: 0px;
+    }
+    to
+    {
+        left: 100%;
+    }
+}
+@keyframes wheel
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+@keyframes sun
+{
+    from
+    {
+        right: 100px;
+    }
+    to
+    {
+        right: 1000px;
+    }
+}
+.box1{
+    background-color: orange;
+    position: fixed;
+    left: 400px;
+    top: 10px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.box2{
+    background-color: white;
+    position: fixed;
+    left: 585px;
+    top: 10px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.box3{
+    background-color: green;
+    position: fixed;
+    left: 1000px;
+    top: 10px;
+    font-size: 50px;
+    font-weight: bold;
+}
